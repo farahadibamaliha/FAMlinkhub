@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FAM's Link Hub 💕</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&family=Nunito:wght@400;600;700&display=swap');
+
+:root{
+  --pink: #ffd9e8;
+  --pink-deep: #f4a9c9;
+  --mint: #c9f4de;
+  --mint-deep: #8fd9b6;
+  --blue: #cfe8ff;
+  --blue-deep: #93c5f0;
+  --lavender: #e6dcff;
+  --lavender-deep: #b9a4ec;
+  --bg: #fffaf9;
+  --card-bg: #ffffff;
+  --ink: #4a4458;
+  --ink-soft: #746e88;
+  --accent: #a487d6;
+  --accent-dark: #8267b8;
+  --radius: 16px;
+  --shadow: 0 6px 20px rgba(164, 135, 214, 0.12);
+  --shadow-hover: 0 10px 28px rgba(164, 135, 214, 0.2);
+}
+*{ box-sizing: border-box; }
+html{ scroll-behavior: smooth; }
+body{
+  margin: 0;
+  background:
+    radial-gradient(circle at 8% 0%, var(--pink) 0%, transparent 32%),
+    radial-gradient(circle at 95% 8%, var(--blue) 0%, transparent 30%),
+    radial-gradient(circle at 50% 100%, var(--mint) 0%, transparent 28%),
+    var(--bg);
+  background-attachment: fixed;
+  font-family: 'Nunito', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--ink);
+  min-height: 100vh;
+}
+
+.layout{
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 40px 24px 70px;
+}
+
+/* ---------- main content ---------- */
+main{ flex: 1; min-width: 0; }
+h1{
+  font-family: 'Quicksand', sans-serif;
+  font-size: clamp(1.8rem, 4vw, 2.4rem);
+  margin: 0 0 6px 0;
+}
+.sub{ color: var(--ink-soft); margin: 0 0 32px 0; }
+
+.section{
+  scroll-margin-top: 24px;
+  background: var(--card-bg);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 26px 28px;
+  margin-bottom: 22px;
+  border: 1px solid rgba(164,135,214,0.08);
+}
+.section h2{
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.25rem;
+  margin: 0 0 16px 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-bottom: 12px;
+  border-bottom: 2px dashed rgba(164,135,214,0.25);
+}
+
+.link-list{ list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 10px; }
+.link-list li a{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  color: var(--ink);
+  background: var(--bg);
+  padding: 14px 18px;
+  border-radius: 12px;
+  font-weight: 700;
+  font-family: 'Quicksand', sans-serif;
+  border: 1px solid rgba(164,135,214,0.1);
+  transition: transform .15s ease, box-shadow .15s ease, background .15s ease;
+}
+.link-list li a:hover{
+  transform: translateY(-2px) scale(1.01);
+  box-shadow: var(--shadow-hover);
+  background: var(--lavender);
+}
+.link-list li a .icon{
+  font-size: 1.3rem;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background: var(--pink);
+  flex-shrink: 0;
+}
+.link-list li a .txt{ display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+.link-list li a .url{
+  font-family: 'Nunito', sans-serif;
+  font-weight: 400;
+  font-size: 0.8rem;
+  color: var(--ink-soft);
+  margin-top: 2px;
+  overflow-wrap: anywhere;
+}
+
+.tint-study .icon{ background: var(--pink); }
+.tint-quest .icon{ background: var(--mint); }
+.tint-clinical .icon{ background: var(--blue); }
+.tint-personal .icon{ background: var(--lavender); }
+
+footer{
+  text-align: center;
+  margin-top: 30px;
+  color: var(--ink-soft);
+  font-size: 0.92rem;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+@media (max-width: 760px){
+  .layout{ padding: 30px 20px 60px; }
+}
+</style>
+</head>
+<body>
+<div class="layout">
+
+
+  <main>
+    <h1>💕 FAM's Link Hub</h1>
+    <p class="sub">My little corner 💕</p>
+
+    <section class="section" id="study">
+      <h2>📚 Study Made Easy</h2>
+      <ul class="link-list">
+        <li><a href="https://tinyurl.com/farahupm" target="_blank" rel="noopener">
+          <span class="icon tint-study">📖</span>
+          <span class="txt">Part 1 &amp; Part 2<span class="url">tinyurl.com/farahupm</span></span>
+        </a></li>
+        <li><a href="https://bazliamin90.github.io/biostats" target="_blank" rel="noopener">
+          <span class="icon tint-study">📊</span>
+          <span class="txt">Biostatistic<span class="url">bazliamin90.github.io/biostats</span></span>
+        </a></li>
+        <li><a href="https://bazliamin90.github.io/biostat2" target="_blank" rel="noopener">
+          <span class="icon tint-study">📊</span>
+          <span class="txt">Biostatistic 2<span class="url">bazliamin90.github.io/biostat2</span></span>
+        </a></li>
+        <li><a href="https://docs.google.com/document/d/1TNUo66Hymk8Se88XNDFA90yBzA2mHFyf-M9a1yhwQH4/edit?usp=drivesdk" target="_blank" rel="noopener">
+          <span class="icon tint-study">📝</span>
+          <span class="txt">ED Cheat Note<span class="url">docs.google.com/.../1TNUo66Hy...</span></span>
+        </a></li>
+      </ul>
+    </section>
+
+    <section class="section" id="questionnaire">
+      <h2>📋 Questionnaire &amp; Scale</h2>
+      <ul class="link-list">
+        <li><a href="https://psychiatry-rating-scales.pages.dev/" target="_blank" rel="noopener">
+          <span class="icon tint-quest">📝</span>
+          <span class="txt">Psychiatry Rating Scales<span class="url">psychiatry-rating-scales.pages.dev</span></span>
+        </a></li>
+        <li><a href="https://famscale.netlify.app/" target="_blank" rel="noopener">
+          <span class="icon tint-quest">📝</span>
+          <span class="txt">FAM Questionnaire<span class="url">famscale.netlify.app</span></span>
+        </a></li>
+      </ul>
+    </section>
+
+    <section class="section" id="clinical">
+      <h2>🩺 Clinical Made Easy</h2>
+      <ul class="link-list">
+        <li><a href="https://psychiatry-medication-guide.pages.dev/" target="_blank" rel="noopener">
+          <span class="icon tint-clinical">💊</span>
+          <span class="txt">Psychiatry Medication<span class="url">psychiatry-medication-guide.pages.dev</span></span>
+        </a></li>
+        <li><a href="https://drive.google.com/file/d/1vuAADIXCGBXb1BmJI56rjPIEdY0lBOsy/view?usp=drivesdk" target="_blank" rel="noopener">
+          <span class="icon tint-clinical">📁</span>
+          <span class="txt">Psychiatry Medication HSIS<span class="url">drive.google.com/.../1vuAADIXC...</span></span>
+        </a></li>
+        <li><a href="https://mindguide-psychoeducation.pages.dev/" target="_blank" rel="noopener">
+          <span class="icon tint-clinical">🧠</span>
+          <span class="txt">Psychoeducation<span class="url">mindguide-psychoeducation.pages.dev</span></span>
+        </a></li>
+        <li><a href="https://farahadibamaliha.github.io/thrive/" target="_blank" rel="noopener">
+          <span class="icon tint-clinical">🌱</span>
+          <span class="txt">THRIVE<span class="url">farahadibamaliha.github.io/thrive</span></span>
+        </a></li>
+        <li><a href="https://www.tabah.my/irys" target="_blank" rel="noopener">
+          <span class="icon tint-clinical">🕊️</span>
+          <span class="txt">IRYS<span class="url">tabah.my/irys</span></span>
+        </a></li>
+        <li><a href="https://tranquil-rolypoly-e6172f.netlify.app/" target="_blank" rel="noopener">
+          <span class="icon tint-clinical">🩹</span>
+          <span class="txt">Wound Care<span class="url">tranquil-rolypoly-e6172f.netlify.app</span></span>
+        </a></li>
+        <li><a href="https://drive.google.com/file/d/1VqXIuXFQKXUVfGjJ17HtOtXaEvdN_fC3/view?usp=drivesdk" target="_blank" rel="noopener">
+          <span class="icon tint-clinical">⚡</span>
+          <span class="txt">ECT<span class="url">drive.google.com/.../1VqXIuXFQ...</span></span>
+        </a></li>
+      </ul>
+    </section>
+
+    <section class="section" id="personal">
+      <h2>🌸 Personal</h2>
+      <ul class="link-list">
+        <li><a href="https://tinyurl.com/bazlifarah" target="_blank" rel="noopener">
+          <span class="icon tint-personal">💰</span>
+          <span class="txt">Bazli &amp; Farah Expenses<span class="url">tinyurl.com/bazlifarah</span></span>
+        </a></li>
+        <li><a href="https://docs.google.com/spreadsheets/d/1pPpp2BUk0XtMJNZe2_7sBhiGA_N3cCRNjulRkv6XktM/edit?gid=0#gid=0" target="_blank" rel="noopener">
+          <span class="icon tint-personal">💰</span>
+          <span class="txt">Farah Expenses<span class="url">docs.google.com/.../1pPpp2BUk...</span></span>
+        </a></li>
+        <li><a href="https://docs.google.com/document/d/1I61FvcTajDUHM2tTOV3qn6Q20NidXxR-uajRo9dP00Q/edit?tab=t.0" target="_blank" rel="noopener">
+          <span class="icon tint-personal">💌</span>
+          <span class="txt">Love Letter<span class="url">docs.google.com/.../1I61FvcTa...</span></span>
+        </a></li>
+        <li><a href="https://bazliamin90.github.io/bff/" target="_blank" rel="noopener">
+          <span class="icon tint-personal">🎉</span>
+          <span class="txt">Anniversary 11th<span class="url">bazliamin90.github.io/bff</span></span>
+        </a></li>
+        <li><a href="https://bazliamin90.github.io/game" target="_blank" rel="noopener">
+          <span class="icon tint-personal">🎮</span>
+          <span class="txt">Game<span class="url">bazliamin90.github.io/game</span></span>
+        </a></li>
+        <li><a href="https://bazliamin90.github.io/arab" target="_blank" rel="noopener">
+          <span class="icon tint-personal">🕌</span>
+          <span class="txt">Arab<span class="url">bazliamin90.github.io/arab</span></span>
+        </a></li>
+      </ul>
+    </section>
+
+    <footer>"If I'm not enjoying it, that means I'm doing it wrong!"</footer>
+  </main>
+
+</div>
+</body>
+</html>
